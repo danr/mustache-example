@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>{{title}}</title>
+<style>
+body {
+  font-family: "Source Sans Pro", sans;
+  line-height: 1.6;
+  font-weight: 300;
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+
+.container {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 0px;
+  border: 0px;
+}
+</style>
+<body>
+<div class="container">
+<h1>{{title}}<h1>
+<h3>Names</h3>
+<ul>
+  {{#names}}
+  <li>{{.}}</li>
+  {{/names}}
+</ul>
+<h3>Cities</h3>
+<ul>
+  {{#cities}}
+  <li>{{name}} (<i>{{size}}</i>)</li>
+  {{/cities}}
+</ul>
+</div>
+</body>
+</html>
